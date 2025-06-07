@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Show/Hide Example</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    h1 {
+      color: #78479b;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333333;
+      background-color: #e0f7fa;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4a148c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔁 Show / Hide</h1>
+    <h2 id="text">Web Application Development Dataaaaaaa</h2>
+
+    <div>
+      <button onclick="show()">Show</button>
+      <button onclick="hide()">Hide</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

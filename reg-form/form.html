@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Form</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #main {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #4a148c;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      border-color: #9c27b0;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgb(74, 20, 140);
+    }
+    #hello{
+        color: rgb(74,20,120);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="main">
+
+    <div>
+        <h1 id="hello">Registration Form</h1>
+    </div>
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+    </div>
+
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" />
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
+
+    <div>
+      <input onclick="Getdata()" type="submit" value="Submit" />
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
